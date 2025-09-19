@@ -1,0 +1,25 @@
+{
+  "name": "soulfuel-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next build && next export",
+    "deploy": "npm run build && npm run export"
+  },
+  "dependencies": {
+    "next": "^14.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "resend": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "gh-pages": "^6.3.0",
+    "typescript": "^5.0.0"
+  }
+}
