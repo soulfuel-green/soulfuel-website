@@ -95,52 +95,21 @@
 //     return NextResponse.json({ message: "Failed to send email" }, { status: 500 })
 //   }
 // }
+//
 
 
-import { Resend } from "resend"
+// This API route is disabled for static export
+// For static hosting, use a client-side solution or external service
+// See README.md for hosting options
+
 import { NextResponse } from "next/server"
 
-const resend = new Resend(process.env.RESEND_API_KEY)
-
 export async function POST(request: Request) {
-  try {
-    const formData = await request.json()
-    const { name, email, company, message } = formData
-
-    
-    await resend.emails.send({
-      from: "Soulfuel Website <info@soulfuelgreenenergy.com>",
-      to: ["Info.soulfuelgreenenergy@gmail.com", "sweta.soulfuel@gmail.com"],
-      subject: "New Inquiry from Soulfuel Website",
-      html: `
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Company:</strong> ${company || "N/A"}</p>
-        <p><strong>Message:</strong></p>
-        <p>${message}</p>
-      `,
-    })
-
-   
-    await resend.emails.send({
-      from: "Soulfuel Green Energy <info@soulfuelgreenenergy.com>",
-      to: email,
-      subject: "We’ve received your inquiry",
-      html: `
-        <p>Hi ${name},</p>
-        <p>Thank you for reaching out to Soulfuel Green Energy! We’ve received your inquiry and our team will respond within 24 hours with a customized quote.</p>
-        <p><em>Your message:</em></p>
-        <blockquote>${message}</blockquote>
-        <p>Best regards,<br/>Soulfuel Green Energy Team</p>
-      `,
-    })
-
-    console.log("Resend key loaded:", process.env.RESEND_API_KEY ? "Yes" : "No")
-
-
-    return NextResponse.json({ message: "Emails sent successfully" }, { status: 200 })
-  } catch (error) {
-    console.error("Error sending emails:", error)
-    return NextResponse.json({ message: "Failed to send email" }, { status: 500 })
-  }
+  return NextResponse.json(
+    { 
+      message: "API routes are not available in static export. Please use a client-side solution or external service for form handling.",
+      error: "STATIC_EXPORT_LIMITATION"
+    }, 
+    { status: 501 }
+  )
 }
