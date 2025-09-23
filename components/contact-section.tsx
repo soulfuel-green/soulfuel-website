@@ -98,51 +98,50 @@ export default function ContactSection() {
           </p>
         </div>
 
-        {/* <div className="grid lg:grid-cols-2 gap-12"> */}
-        <div className="flex flex-row items-center justify-center">
-          <div>
-            <h3 className="text-xl font-bold text-gray-900 mb-6 text-center">Contact Information</h3>
+        <div className="flex justify-center">
+          <div className="w-full max-w-6xl">
+            <h3 className="text-xl font-bold text-gray-900 mb-8 text-center">Contact Information</h3>
 
-            <div className="flex flex-row justify-evenly gap-20 w-max ">
-              <div>
-                <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+              {/* Head Office */}
+              <div className="flex flex-col items-center text-center">
+                <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
                   <MapPin className="h-6 w-6 text-green-600" />
                 </div>
-                <div>
-                  <h4 className="text-lg font-semibold text-gray-900 mb-2">Head Office</h4>
-                  <p className="text-gray-600 leading-normal">
-                    Soulfuel Green Energy Pvt. Ltd.
-                    <br />
-                    336, Phase III, Udyog Vihar, Sector 19
-                    <br />
-                    Gurugram, Haryana - 122016, India
-                  </p>
-                </div>
+                <h4 className="text-lg font-semibold text-gray-900 mb-3">Head Office</h4>
+                <p className="text-gray-600 leading-relaxed">
+                  Soulfuel Green Energy Pvt. Ltd.
+                  <br />
+                  336, Phase III, Udyog Vihar, Sector 19
+                  <br />
+                  Gurugram, Haryana - 122016, India
+                </p>
               </div>
 
-              <div>
-                <div className="flex-shrink-0 w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+              {/* Phone */}
+              <div className="flex flex-col items-center text-center">
+                <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
                   <Phone className="h-6 w-6 text-green-600" />
                 </div>
-                <div>
-                  <h4 className="text-lg font-semibold text-gray-900 mb-2">Phone</h4>
-                  <p className="text-gray-600 leading-normal">+91-9819818411</p>
-                  <p className="text-gray-600 leading-normal">+91-9582160878</p>
-                </div>
+                <h4 className="text-lg font-semibold text-gray-900 mb-3">Phone</h4>
+                <p className="text-gray-600 leading-relaxed">
+                  +91-9819818411
+                  <br />
+                  +91-9582160878
+                </p>
               </div>
 
-              <div>
-                <div className="flex-shrink-0 w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+              {/* Email */}
+              <div className="flex flex-col items-center text-center">
+                <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
                   <Mail className="h-6 w-6 text-green-600" />
                 </div>
-                <div>
-                  <h4 className="text-lg font-semibold text-gray-900 mb-2">Email</h4>
-                  <p className="text-gray-600 leading-normal">
-                    sweta.soulfuel@gmail.com
-                    <br/>
-                    Info.soulfuelgreenenergy@gmail.com
-                  </p>
-                </div>
+                <h4 className="text-lg font-semibold text-gray-900 mb-3">Email</h4>
+                <p className="text-gray-600 leading-relaxed">
+                  sweta.soulfuel@gmail.com
+                  <br />
+                  Info.soulfuelgreenenergy@gmail.com
+                </p>
               </div>
             </div>
           </div>
