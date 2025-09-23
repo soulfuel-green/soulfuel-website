@@ -32,17 +32,17 @@ export default function Header() {
   }
 
   return (
-    <header className="bg-white border-b border-gray-200 sticky top-0">
+    <header className="bg-white shadow-sm">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/">
               <Image
                 src="/soulfuel-logo.png"
                 alt="Soulfuel Green Energy"
-                width={110}
-                height={90}
+                width={120}
+                height={100}
                 style={{borderRadius:4,filter: 'contrast(1.2) brightness(1.1)',}}
               />
             </Link>
@@ -54,16 +54,16 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`text-gray-700 hover:text-green-500 transition-colors font-medium border-b-2 ${
+                className={`text-gray-900 hover:text-green-600 transition-colors font-medium border-b-2 ${
                   isActive(item.href)
-                    ? "text-green-500 border-green-500"
+                    ? "text-green-600 border-green-600"
                     : "border-transparent"
                 }`}
               >
                 {item.label}
               </Link>
             ))}
-            <Button asChild className="bg-lime-400 hover:bg-lime-500 text-gray-900 font-semibold">
+            <Button asChild className="bg-green-600 hover:bg-green-700 text-white font-semibold">
               <Link href="/contact">Get a Quote</Link>
             </Button>
           </nav>
@@ -89,8 +89,8 @@ export default function Header() {
                   href={item.href}
                   className={`block px-3 py-2 transition-colors font-medium border-b-2 ${
                     isActive(item.href)
-                      ? "text-green-500 border-green-500"
-                      : "text-gray-700 hover:text-green-500 border-transparent"
+                      ? "text-green-600 border-green-600"
+                      : "text-gray-900 hover:text-green-600 border-transparent"
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -98,7 +98,7 @@ export default function Header() {
                 </Link>
               ))}
               <div className="px-3 py-2">
-                <Button asChild className="w-full bg-lime-400 hover:bg-lime-500 text-gray-900 font-semibold">
+                <Button asChild className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold">
                   <Link href="/contact">Get a Quote</Link>
                 </Button>
               </div>

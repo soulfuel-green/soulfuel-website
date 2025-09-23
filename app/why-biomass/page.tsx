@@ -1,4 +1,3 @@
-import Header from "@/components/header"
 import Footer from "@/components/footer"
 import BiomassComparisonSection from "@/components/biomass-comparison-section"
 import WhyBiomassSection from "@/components/why-biomass-section"
@@ -7,7 +6,6 @@ import EnvironmentalBenefitsSection from "@/components/environmental-benefits-se
 export default function WhyBiomassPage() {
   return (
     <>
-      <Header />
       <main style={{ position: 'relative', zIndex: 40 }}>
         <WhyBiomassSection />
         <BiomassComparisonSection />

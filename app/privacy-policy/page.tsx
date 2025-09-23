@@ -1,10 +1,8 @@
-import Header from "@/components/header"
 import Footer from "@/components/footer"
 
 export default function PrivacyPolicyPage() {
   return (
     <>
-      <Header />
       <main className="container mx-auto px-6 sm:px-8 lg:px-12 py-10 min-h-[calc(100vh-160px)]">
         <h1 className="text-4xl font-bold text-gray-900 mb-6">Privacy Policy</h1>
         <p className="text-gray-700 mb-4">

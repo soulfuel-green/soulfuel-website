@@ -1,4 +1,3 @@
-import Header from "@/components/header"
 import Footer from "@/components/footer"
 // import ImpactHeroSection from "@/components/impact-hero-section" // removed
 import ReadyToCapitaliseSection from "@/components/ready-to-capitalise-section"
@@ -9,7 +8,6 @@ import GlobalEnvironmentImpactSection from "@/components/global-environment-impa
 export default function ImpactPage() {
   return (
     <>
-      <Header />
       <main style={{ position: 'relative', zIndex: 40 }}>
         {/* <ImpactHeroSection /> */} {/* hero highlight cards removed per request */}
         <EnvironmentalImpactStatsSection />

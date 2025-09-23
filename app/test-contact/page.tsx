@@ -6,7 +6,6 @@ import ContactFormTest from "@/components/contact-form-test"
 export default function TestContactPage() {
   return (
     <>
-      <Header />
       <main>
         <div className="py-10 bg-gray-50">
           <div className="container mx-auto px-6 sm:px-8 lg:px-12">
