@@ -25,6 +25,12 @@ export default function Header() {
     { href: "/faq", label: "FAQ" },
   ]
 
+  const isActive = (href: string) => {
+    if (!pathname) return false
+    if (href === "/") return pathname === "/"
+    return pathname.startsWith(href)
+  }
+
   return (
     <header className="bg-white border-b border-gray-200 sticky top-0">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -48,8 +54,10 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`text-gray-700 hover:text-green-500 transition-colors font-medium ${
-                  pathname === item.href ? "text-green-500 border-b-2 border-green-500" : ""
+                className={`text-gray-700 hover:text-green-500 transition-colors font-medium border-b-2 ${
+                  isActive(item.href)
+                    ? "text-green-500 border-green-500"
+                    : "border-transparent"
                 }`}
               >
                 {item.label}
@@ -79,7 +87,11 @@ export default function Header() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="block px-3 py-2 text-gray-700 hover:text-green-500 transition-colors font-medium"
+                  className={`block px-3 py-2 transition-colors font-medium border-b-2 ${
+                    isActive(item.href)
+                      ? "text-green-500 border-green-500"
+                      : "text-gray-700 hover:text-green-500 border-transparent"
+                  }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}

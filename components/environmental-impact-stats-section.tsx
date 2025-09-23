@@ -42,7 +42,7 @@ export default function EnvironmentalImpactStatsSection() {
     <section className="py-10 bg-white">
       <div className="container mx-auto px-6 sm:px-8 lg:px-12">
         <div className="text-center mb-10">
-          <h3 className="text-2xl font-bold text-gray-900 mb-3">🌎 Environmental Impact Statistics</h3>
+          <h3 className="text-2xl font-bold text-gray-900 mb-3 text-3xl md:text-4xl">🌎 Environmental Impact Statistics</h3>
           <p className="text-base text-gray-600 max-w-4xl mx-auto leading-normal">
             Comprehensive data showing why biomass is the superior choice for environmental sustainability
           </p>

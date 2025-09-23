@@ -2,9 +2,9 @@ import { CheckCircle2 } from "lucide-react"
 
 export default function MergedVisionMissionPurpose() {
   return (
-    <section aria-labelledby="vmp-title" className="py-16 md:py-20">
+    <section aria-labelledby="vmp-title" className="py-16 md:py-20 bg-white">
       <div className="mx-auto max-w-6xl px-4 md:px-6">
-        <h2 id="vmp-title" className="text-balance text-center text-3xl md:text-4xl font-semibold tracking-tight">
+        <h2 id="vmp-title" className="text-balance text-center text-black text-3xl md:text-4xl font-semibold tracking-tight">
           Our Core Belief System
         </h2>
 
@@ -17,15 +17,15 @@ export default function MergedVisionMissionPurpose() {
             <div className="flex items-start gap-3">
               <span
                 aria-hidden="true"
-                className="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-50 text-emerald-700 ring-1 ring-emerald-200 transition-colors group-hover:ring-emerald-300"
+                className="inline-flex h-9 w-20 items-center justify-center rounded-lg bg-emerald-50 text-emerald-700 ring-1 ring-emerald-200 transition-colors group-hover:ring-emerald-300"
               >
                 <CheckCircle2 className="h-5 w-5" />
               </span>
               <div>
-                <h3 id="vmp-vision" className="text-lg font-medium">
+                <h3 id="vmp-vision" className="text-lg font-medium text-black">
                   Vision
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                <p className="mt-2 text-sm leading-relaxed text-black">
                   To become India&apos;s leading clean energy company, creating a circular economy that turns waste into
                   wealth.
                 </p>
@@ -41,15 +41,15 @@ export default function MergedVisionMissionPurpose() {
             <div className="flex items-start gap-3">
               <span
                 aria-hidden="true"
-                className="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-50 text-emerald-700 ring-1 ring-emerald-200 transition-colors group-hover:ring-emerald-300"
+                className="inline-flex h-9 w-20 items-center justify-center rounded-lg bg-emerald-50 text-emerald-700 ring-1 ring-emerald-200 transition-colors group-hover:ring-emerald-300"
               >
                 <CheckCircle2 className="h-5 w-5" />
               </span>
               <div>
-                <h3 id="vmp-mission" className="text-lg font-medium">
+                <h3 id="vmp-mission" className="text-lg font-medium text-black">
                   Mission
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                <p className="mt-2 text-sm leading-relaxed text-black">
                   To transform agricultural waste into sustainable energy solutions that benefit farmers, industries,
                   and the environment.
                 </p>
@@ -65,15 +65,15 @@ export default function MergedVisionMissionPurpose() {
             <div className="flex items-start gap-3">
               <span
                 aria-hidden="true"
-                className="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-50 text-emerald-700 ring-1 ring-emerald-200 transition-colors group-hover:ring-emerald-300"
+                className="inline-flex h-9 w-20 items-center justify-center rounded-lg bg-emerald-50 text-emerald-700 ring-1 ring-emerald-200 transition-colors group-hover:ring-emerald-300"
               >
                 <CheckCircle2 className="h-5 w-5" />
               </span>
               <div>
-                <h3 id="vmp-purpose" className="text-lg font-medium">
+                <h3 id="vmp-purpose" className="text-lg font-medium text-black">
                   Purpose
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                <p className="mt-2 text-sm leading-relaxed text-black">
                   Founded on the belief that sustainable energy should be accessible, affordable, and beneficial to all.
                 </p>
               </div>
