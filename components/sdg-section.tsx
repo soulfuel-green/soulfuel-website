@@ -61,7 +61,7 @@ export default function SDGSection() {
         </div>
 
         {/* Impact Summary */}
-        <div className="mt-16 bg-gray-50 rounded-lg p-8">
+        {/* <div className="mt-16 bg-gray-50 rounded-lg p-8">
           <div className="text-center mb-8">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Global Impact Summary</h3>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-normal">
@@ -87,7 +87,7 @@ export default function SDGSection() {
               <div className="text-gray-700 font-medium">States Covered</div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   )

@@ -5,27 +5,32 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="bg-white shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-6">
-            <div className="flex items-center">
-              <Image
-                src="/soulfuel-logo.png"
-                alt="Soulfuel Green Energy"
-                width={100}
-                height={100}
-                style={{borderRadius:4,background:"transparent" ,filter: 'contrast(1.2) brightness(1.1)',}}
-              />
-            </div>
-            <nav className="hidden md:flex space-x-8">
+      <header className="bg-white shadow-sm flex items-center justify-between sm:justify-around mx-auto px-4 lg:px-8 py-6">
+
+            <Image
+              src="/soulfuel-logo.png"
+              alt="Soulfuel Green Energy"
+              width={120}
+              height={100}
+              style={{borderRadius:4,background:"transparent" ,filter: 'contrast(1.2) brightness(1.1)',}}
+            />
+
+            <div>
+              <nav className="hidden md:flex space-x-8">
               <a href="/" className="text-gray-900 hover:text-green-600">Home</a>
               <a href="/services" className="text-gray-900 hover:text-green-600">Our Services</a>
               <a href="/why-biomass" className="text-gray-900 hover:text-green-600">Why Biomass?</a>
               <a href="/impact" className="text-gray-900 hover:text-green-600">Impact</a>
               <a href="/about" className="text-gray-900 hover:text-green-600">About</a>
               <a href="/faq" className="text-gray-900 hover:text-green-600">FAQ</a>
-              <a href="/contact" className="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700">Get a Quote</a>
+              
             </nav>
+            </div>
+               
+          <div className="hidden md:flex space-x-8">
+            <a href="/contact" className="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700">Get a Quote</a>
+          </div>
+
             <div className="md:hidden">
               <button className="text-gray-900">
                 <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -33,8 +38,7 @@ export default function Home() {
                 </svg>
               </button>
             </div>
-          </div>
-        </div>
+
       </header>
 
       {/* Hero Carousel Section */}

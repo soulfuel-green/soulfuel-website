@@ -1,4 +1,4 @@
-import { DollarSign, TrendingUp, PieChart, Target } from "lucide-react"
+import { IndianRupee, TrendingUp, PieChart, Target } from "lucide-react"
 
 export default function FinancialProjectionsSection() {
   const projections = [
@@ -30,7 +30,7 @@ export default function FinancialProjectionsSection() {
 
   const metrics = [
     {
-      icon: DollarSign,
+      icon: IndianRupee,
       title: "Break-even Point",
       value: "18 months",
       description: "From full operations start",

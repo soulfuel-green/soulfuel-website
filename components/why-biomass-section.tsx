@@ -1,9 +1,9 @@
-import { Flame, DollarSign, Leaf, Zap, BadgeCheck, ShieldCheck } from "lucide-react"
+import { Flame, IndianRupee, Leaf, Zap, BadgeCheck, ShieldCheck } from "lucide-react"
 
 export default function WhyBiomassSection() {
   const benefits = [
     {
-      icon: DollarSign,
+      icon: IndianRupee,
       title: "Cost-Effective",
       description: "30-40% cheaper than coal with better efficiency",
     },

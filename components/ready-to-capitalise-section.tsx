@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { TrendingUp, DollarSign, Target, Factory, Users, Leaf, MapPin } from "lucide-react"
+import { TrendingUp, IndianRupee, Target, Factory, Users, Leaf, MapPin } from "lucide-react"
 import Link from "next/link"
 
 export default function ReadyToCapitaliseSection() {
@@ -10,7 +10,7 @@ export default function ReadyToCapitaliseSection() {
       description: "25% annual growth in biomass energy sector",
     },
     {
-      icon: DollarSign,
+      icon: IndianRupee,
       title: "Investment Returns",
       description: "Attractive ROI with government incentives",
     },
@@ -47,7 +47,7 @@ export default function ReadyToCapitaliseSection() {
       description: "Annual carbon emissions reduced through clean energy",
     },
     {
-      icon: DollarSign,
+      icon: IndianRupee,
       value: "₹20Cr+",
       label: "Revenue Generated",
       description: "Economic value created for farming communities",
@@ -89,13 +89,12 @@ export default function ReadyToCapitaliseSection() {
         </div>
 
         {/* Integrated Impact Statistics */}
-        <div className="text-center mb-12">
+        {/* <div className="text-center mb-12">
           <h3 className="lg:text-4xl font-bold text-gray-900 mb-4 text-2xl">Our Tangible Impact</h3>
           <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-normal">
             Measuring our contribution to sustainable energy, rural development, and environmental protection.
           </p>
         </div>
-
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {impactStats.map((stat, index) => (
             <div
@@ -110,7 +109,7 @@ export default function ReadyToCapitaliseSection() {
               <p className="text-gray-600 leading-normal">{stat.description}</p>
             </div>
           ))}
-        </div>
+        </div> */}
 
         <div className="bg-lime-600 text-white rounded-lg p-8 text-center">
           <div className="grid md:grid-cols-3 gap-8">

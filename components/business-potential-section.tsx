@@ -1,4 +1,4 @@
-import { TrendingUp, DollarSign, Award, BarChart3 } from "lucide-react"
+import { TrendingUp, IndianRupee, Award, BarChart3 } from "lucide-react"
 
 export default function BusinessPotentialSection() {
   const stats = [
@@ -9,7 +9,7 @@ export default function BusinessPotentialSection() {
       description: "Massive untapped potential",
     },
     {
-      icon: DollarSign,
+      icon: IndianRupee,
       value: "₹50,000 Cr",
       label: "Government Subsidies Available",
       description: "Strong policy support",
