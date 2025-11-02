@@ -251,7 +251,7 @@ export default function OurOfferingsSection() {
                           asChild
                           className="bg-gradient-to-r from-lime-400 to-lime-500 hover:from-lime-500 hover:to-lime-600 text-gray-900 font-semibold px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto"
                         >
-                          <a href="/contact">Order Now</a>
+                          <a href="/contact">Request a callback</a>
                         </Button>
                       </div>
 
