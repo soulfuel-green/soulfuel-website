@@ -207,7 +207,7 @@ export default function OurOfferingsSection() {
                       <Button
                         variant="outline"
                         onClick={() => setExpandedService(null)}
-                        className="shrink-0 border-gray-300 hover:border-gray-400"
+                        className="shrink-0 border-green-600 hover:border-green-900 text-green-600 hover:text-green-900"
                         aria-label="Close details"
                       >
                         Close
