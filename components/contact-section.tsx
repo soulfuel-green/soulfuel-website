@@ -133,16 +133,27 @@ export default function ContactSection() {
 
               {/* Email */}
               <div className="flex flex-col items-center text-center">
-                <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-                  <Mail className="h-6 w-6 text-green-600" />
+                 <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                    <Mail className="h-6 w-6 text-green-600" />
+                 </div>
+                 <h4 className="text-lg font-semibold text-gray-900 mb-3">Email</h4>
+                  <p className="text-gray-600 leading-relaxed">
+                    <a
+                       href="mailto:sweta.soulfuel@gmail.com"
+                       className="text-green-600 hover:underline hover:text-green-700 transition-colors"
+                    >
+                      sweta.soulfuel@gmail.com
+                    </a>
+                    <br />
+                     <a
+                       href="mailto:Info.soulfuelgreenenergy@gmail.com"
+                        className="text-green-600 hover:underline hover:text-green-700 transition-colors"
+                    >
+                      Info.soulfuelgreenenergy@gmail.com
+                    </a>
+                  </p>
                 </div>
-                <h4 className="text-lg font-semibold text-gray-900 mb-3">Email</h4>
-                <p className="text-gray-600 leading-relaxed">
-                  sweta.soulfuel@gmail.com
-                  <br />
-                  Info.soulfuelgreenenergy@gmail.com
-                </p>
-              </div>
+
             </div>
           </div>
 

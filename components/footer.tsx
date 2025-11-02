@@ -22,7 +22,7 @@ export default function Footer() {
           {" "}
           {/* Adjusted grid columns */}
           <div className="lg:col-span-2">
-            <div className="flex items-center mb-6">
+            {/* <div className="flex items-center mb-6">
               <Link href="/">
               <Image
                 src="/soulfuel-logo.png"
@@ -32,7 +32,7 @@ export default function Footer() {
                 style={{borderRadius:4,background:"transparent" ,filter: 'contrast(1.2) brightness(1.1)',}}
               />
             </Link>
-            </div>
+            </div> */}
             <p className="text-gray-300 mb-6 max-w-md">
               Transforming agricultural waste into clean energy solutions for a sustainable future. Empowering farmers,
               industries, and communities.
@@ -101,9 +101,9 @@ export default function Footer() {
               <Link href="/terms-of-service" className="text-gray-400 hover:text-lime-400 transition-colors">
                 Terms of Service
               </Link>
-              <Link href="/cookie-policy" className="text-gray-400 hover:text-lime-400 transition-colors">
+              {/* <Link href="/cookie-policy" className="text-gray-400 hover:text-lime-400 transition-colors">
                 Cookie Policy
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

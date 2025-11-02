@@ -15,18 +15,21 @@ export default function HeroCarouselSection() {
       imageSrc: "/images/hero-farmer-partnership.jpeg",
       headline: "Empowering Rural Communities",
       subheading: "Creating economic opportunities while protecting the environment through direct farmer partnerships",
+      route: '/impact'
     },
     {
       id: 2,
       imageSrc: "/images/hero-agricultural-field.jpeg",
       headline: "Transform Agricultural Waste into Clean Energy",
       subheading: "Leading India's sustainable future with innovative biomass solutions",
+      route: '/why-biomass/'
     },
     {
       id: 3,
       imageSrc: "/images/hero-biomass-products.jpeg",
       headline: "Premium Biomass Pellets & Briquettes",
       subheading: "High-quality fuel products for industrial and commercial applications",
+      route: '/services/'
     },
   ]
 
@@ -52,7 +55,7 @@ export default function HeroCarouselSection() {
       {slides.map((slide, index) => (
         <div
           key={slide.id}
-          className={`absolute inset-0 transition-all duration-1000 ease-in-out ${
+          className={`absolute inset-0 transition-all duration-1500 ease-in-out ${
             index === currentSlide ? "opacity-100 scale-100" : "opacity-0 scale-105"
           }`}
         >
@@ -83,7 +86,7 @@ export default function HeroCarouselSection() {
                 asChild
                 className="bg-lime-400 hover:bg-lime-500 text-gray-900 px-8 py-3 text-lg mt-4 font-normal"
               >
-                <Link href="/why-biomass">Explore More</Link>
+               <Link href={slides[currentSlide].route}>Explore More</Link>
               </Button>
             </div>
           </div>
